@@ -12,6 +12,7 @@ public class MainMenu {
     // Display Main Menu
     void displayMainMenu() {
         // Declare Scanner
+        @SuppressWarnings("resource")
         Scanner scr = new Scanner(System.in);
         // Process
         System.out.println("Hov Document Manager");
@@ -33,6 +34,7 @@ public class MainMenu {
     
     void RegisterNew() {
         // Declare Scanner
+        @SuppressWarnings("resource")
         Scanner scr = new Scanner(System.in);
         
         // Process
@@ -83,6 +85,7 @@ public class MainMenu {
         Integer index = 1;
         Integer docNum = 0;
         // Declare Scanner
+        @SuppressWarnings("resource")
         Scanner scr = new Scanner(System.in);
 
         // Process

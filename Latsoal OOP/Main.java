@@ -6,6 +6,7 @@ public class Main {
     
     void ETC(){
         // Declare Scanner
+        @SuppressWarnings("resource")
         Scanner ETC = new Scanner(System.in);
         // Process
         System.out.print("\nPress enter to continue...");
