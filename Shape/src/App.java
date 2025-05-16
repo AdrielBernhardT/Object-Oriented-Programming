@@ -1,5 +1,5 @@
 public class App {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args){
         Circle circle = new Circle();
         Square square = new Square();
 

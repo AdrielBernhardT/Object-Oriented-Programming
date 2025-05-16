@@ -1,0 +1,1 @@
+int damage, int defense
