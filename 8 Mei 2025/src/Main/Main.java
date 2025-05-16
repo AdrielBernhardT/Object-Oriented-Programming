@@ -2,7 +2,7 @@ package Main;
 
 interface IDamageable {
 	public int takeDamage (int damage, int defense);
-}12
+}
 
 interface IAttack {
 	public void attack (IDamageable damageable);
