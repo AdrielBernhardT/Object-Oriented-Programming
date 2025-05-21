@@ -1,0 +1,59 @@
+public class LightBulb {
+    public void turnOn() {
+        System.out.println("Bulb on");
+    }
+
+    public void turnOff() {
+        System.out.println("Bulb off");
+    }
+}
+
+public class Switch {
+    private LightBulb bulb;
+
+    public Switch() {
+        this.bulb = new LightBulb(); // Direct dependency
+    }
+
+    public void operate(String command) {
+        if (command.equals("ON")) {
+            bulb.turnOn();
+        } else {
+            bulb.turnOff();
+        }
+    }
+}
+
+
+---------------------------------------------------------
+public interface iElectronic {
+   public void turnOn();
+    public void turnOff();
+}
+
+public class LightBulb implements iElectronic{
+    public void turnOn() {
+        System.out.println("Bulb on");
+    }
+
+    public void turnOff() {
+        System.out.println("Bulb off");
+    }
+}
+
+public class Switch {
+    private iElectronic electronic;
+
+    public Switch() {
+        this.electronic = new LightBulb();
+    }
+
+    public void operate(String command) {
+        if (command.equals("ON")) {
+            electronic.turnOn();
+        } else {
+            electronic.turnOff();
+        }
+    }
+}
+

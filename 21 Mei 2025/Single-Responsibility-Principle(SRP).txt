@@ -1,0 +1,32 @@
+public class Report {
+    public String generateReport() {
+        return "Report data";
+    }
+
+    public void saveToFile(String data) {
+        // Logic to write to a file
+    }
+
+    public void printReport(String data) {
+        // Logic to print the report
+    }
+}
+
+------------------------------------------------------
+public class Generate {
+    public String generateReport() {
+        return "Report data";
+    }
+}
+
+public class Save {
+    public void saveToFile(String data) {
+        // Logic to write to a file
+    }
+}
+
+public class Print {
+    public void printReport(String data) {
+        // Logic to print the report
+    }
+}
