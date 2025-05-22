@@ -7,9 +7,6 @@ public class OAuthLogin implements ILogin {
 
     @Override
     public boolean authenticate(String username, String password) {
-        if(this.token == password){
-            return true;
-        }
-       return false;
+        return this.token.equals(password);
     }
 }
